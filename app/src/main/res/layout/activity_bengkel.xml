@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bengkel"
+    android:background="@color/lightblue">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#2DDB0C"
+        android:id="@+id/tlbar"
+        android:duplicateParentState="true">
+        <TextView
+            android:id="@+id/bngkl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BENGKEL KAMU"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/tmnew"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/ntf2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notif"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="6dp"
+            android:onClick="onHins2"/>
+        <!--        <ImageView-->
+        <!--            android:id="@+id/ntf"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@drawable/notif"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_marginRight="6dp" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tlbar"
+        android:id="@+id/jnsbgkl">
+
+        <ImageView
+            android:id="@+id/bgklJaya"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="214dp"
+            android:outlineSpotShadowColor="#FA7D7750"
+            android:scaleType="fitXY"
+            android:src="@drawable/toko_jaya" />
+
+        <TextView
+            android:id="@+id/jymndi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bgklJaya"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-160dp"
+            android:layout_marginEnd="52dp"
+            android:fontFamily="@font/stencil_regular"
+            android:text="JAYA MANDIRI"
+            android:textColor="@color/merah"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jymndi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bgklJaya"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-140dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/stencil_regular"
+            android:gravity="center"
+            android:text="[BENGKEL LAS / KONSTRUKSI]"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jlan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jymndi2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="83dp"
+            android:drawableLeft="@drawable/location"
+            android:fontFamily="@font/tahoma"
+            android:gravity="fill"
+            android:text="Jln.Mahkamah No.68 Medan"
+            android:textColor="@color/black"
+            android:textSize="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jlan1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="77dp"
+            android:drawableLeft="@drawable/email"
+            android:fontFamily="@font/tahoma"
+            android:gravity="fill"
+            android:text="irwanjayamandiri@yahoo.com"
+            android:textColor="@color/black"
+            android:textSize="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nomndiri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="116dp"
+            android:drawableLeft="@drawable/phone"
+            android:fontFamily="@font/tahoma"
+            android:gravity="fill"
+            android:text="+62821 6463 5334"
+            android:textColor="@color/black"
+            android:textSize="8dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/nomndiri"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/star1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/star"
+                android:shadowColor="#000000" />
+
+            <TextView
+                android:id="@+id/star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/star"
+                android:shadowColor="#000000" />
+
+            <TextView
+                android:id="@+id/star3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/star"
+                android:shadowColor="#000000" />
+
+            <TextView
+                android:id="@+id/star4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/star"
+                android:shadowColor="#000000" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bgklJaya"
+            android:id="@+id/kerja"
+            android:text="@string/kerja"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ravie"
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:layout_marginTop="2mm"/>
+
+        <Button
+            android:id="@+id/jsa"
+            android:layout_width="22mm"
+            android:layout_height="7mm"
+            android:layout_below="@+id/kerja"
+            android:layout_marginLeft="8mm"
+            android:layout_marginTop="5mm"
+            android:background="@drawable/bg_gradasi4"
+            android:fontFamily="@font/arial"
+            android:text="JASA"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:backgroundTint="#01FF23"
+            app:backgroundTintMode="multiply"/>
+        <Button
+            android:layout_width="22mm"
+            android:layout_height="7mm"
+            android:layout_below="@+id/kerja"
+            android:background="@drawable/bg_gradasi4"
+            app:backgroundTint="#ffffff"
+            android:text="Material"
+            android:fontFamily="@font/arial"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="8mm"
+            android:layout_marginTop="5mm"
+            android:layout_toEndOf="@+id/jsa"
+            app:backgroundTintMode="multiply"
+            android:id="@+id/material"
+            android:onClick="onMaterial"
+            tools:ignore="OnClick" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/material"
+            android:text="Menerima Jasa Pembuatan : "
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/mnrimajsa"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mnrimajsa"
+            android:id="@+id/scrl_vw">
+            <RelativeLayout
+                android:id="@+id/wdahjaya"
+                android:layout_width="match_parent"
+                android:layout_height="81mm"
+                android:layout_below="@+id/mnrimajsa"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="53dp"
+                android:layout_marginTop="9dp">
+
+                <RelativeLayout
+                    android:id="@+id/wdahjaya2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/wdahjdl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28mm"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="174dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/bg_gradasi5"
+                        android:fontFamily="@font/tahoma"
+                        android:shadowColor="#988A8A"
+                        android:text="Pagar Besi"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:backgroundTint="#FFFFFF"
+                        app:backgroundTintMode="multiply" />
+
+
+                    <TextView
+                        android:id="@+id/info_material"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wdahjdl"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="184dp"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/arial"
+                        android:text="pagar besi hollow 40 x 40, 40 x 60, dan 40 x 20 ada besi hitan ada besi galfanized"
+                        android:textColor="@color/black"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/info_material"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="21dp"
+                        android:id="@+id/txt_harga"
+                        android:text="Harga"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/tahoma"
+                        android:textSize="18dp"/>
+                    <TextView
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_harga"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="-1dp"
+                        android:layout_marginEnd="21dp"
+                        android:id="@+id/harga"
+                        android:text="Rp. 400.000 /m2 - Rp. 700.000/m2"
+                        android:textColor="#FF3030"
+                        android:fontFamily="@font/arial"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/harga"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="1mm"
+                        android:layout_marginEnd="18dp"
+                        android:id="@+id/note"
+                        android:text="*Harga bisa berubah tergantung model dan material digunakan"
+                        android:textColor="@color/lightblue"
+                        android:fontFamily="@font/arial"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="168dp"
+                        android:layout_height="28mm"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pagarjaya" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/wdahjaya3"
+                    android:layout_width="match_parent"
+                    android:layout_height="197dp"
+                    android:layout_below="@id/wdahjaya2"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/wdahjdl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32mm"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="174dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/bg_gradasi5"
+                        android:fontFamily="@font/tahoma"
+                        android:shadowColor="#988A8A"
+                        android:text="Kanopi"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:backgroundTint="#FFFFFF"
+                        app:backgroundTintMode="multiply" />
+
+
+                    <TextView
+                        android:id="@+id/info_material2"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wdahjdl2"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="184dp"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/arial"
+                        android:text="@string/atap"
+                        android:textColor="@color/black"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/txt_harga2"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/info_material2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="18dp"
+                        android:fontFamily="@font/tahoma"
+                        android:text="Harga"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/harga2"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_harga2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="-1dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/arial"
+                        android:text="Rp. 500.000 /m2 - Rp. 1.500.000/m2"
+                        android:textColor="#FF3030"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/note2"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/harga2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="1mm"
+                        android:layout_marginEnd="18dp"
+                        android:fontFamily="@font/arial"
+                        android:text="*Harga bisa berubah tergantung model dan material digunakan"
+                        android:textColor="@color/lightblue"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="163dp"
+                        android:layout_height="185dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pagarjaya2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/wdahjaya4"
+                    android:layout_width="match_parent"
+                    android:layout_height="134dp"
+                    android:layout_below="@id/wdahjaya3"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/wdahjdl3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28mm"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="174dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/bg_gradasi5"
+                        android:fontFamily="@font/tahoma"
+                        android:shadowColor="#988A8A"
+                        android:text="Teralis"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:backgroundTint="#FFFFFF"
+                        app:backgroundTintMode="multiply" />
+
+
+                    <TextView
+                        android:id="@+id/info_material3"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wdahjdl3"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="184dp"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/arial"
+                        android:text="- Teralis jendela minimalis"
+                        android:textColor="@color/black"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/info_material4"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/info_material3"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="185dp"
+                        android:layout_marginTop="61dp"
+                        android:fontFamily="@font/arial"
+                        android:text="- Teralis jendela klasik/besi tempa"
+                        android:textColor="@color/black"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/txt_harga3"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/info_material4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="18dp"
+                        android:fontFamily="@font/tahoma"
+                        android:text="Harga"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/harga3"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_harga3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="-1dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/arial"
+                        android:text="Rp. 450.000 /m2 - Rp. 650.000/m2"
+                        android:textColor="#FF3030"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/note3"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/harga3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="1mm"
+                        android:layout_marginEnd="18dp"
+                        android:fontFamily="@font/arial"
+                        android:text="*Harga bisa berubah tergantung model dan material digunakan"
+                        android:textColor="@color/lightblue"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="168dp"
+                        android:layout_height="28mm"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pagarjaya3" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/wdahjaya5"
+                    android:layout_width="match_parent"
+                    android:layout_height="134dp"
+                    android:layout_below="@id/wdahjaya4"
+                    android:layout_marginTop="20dp">
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="670dp"
+            android:background="@color/purple_200">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/home2"
+                android:layout_marginLeft="5mm"
+                android:text="Home"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/arial"
+                android:id="@+id/txthome2"
+                android:onClick="onHome"
+                tools:ignore="OnClick"
+                android:layout_marginTop="5dp"/>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawableTop="@drawable/bengkel"-->
+<!--                android:layout_marginLeft="12mm"-->
+<!--                android:text="Bengkel"-->
+<!--                android:textSize="14dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/arial"-->
+<!--                android:id="@+id/txtbengkel" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/chat2"
+                android:layout_marginLeft="10mm"
+                android:text="Pesan"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/arial"
+                android:id="@+id/txtchat"
+                android:onClick="onPesan"
+                tools:ignore="OnClick" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/akun2"
+                android:layout_marginLeft="10mm"
+                android:text="Profil"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/arial"
+                android:id="@+id/txtprofil"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/history"
+                android:layout_marginLeft="10mm"
+                android:text="History"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/arial"
+                android:id="@+id/txthistory2"
+                android:onClick="onhstory"
+                tools:ignore="OnClick"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

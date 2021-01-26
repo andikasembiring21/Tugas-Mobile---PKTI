@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pesanan"
+    android:background="#2C2222">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#2DDB0C"
+        android:id="@+id/tlbar3"
+        android:duplicateParentState="true">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="28dp"
+            android:src="@drawable/panah2"
+            android:id="@+id/panah2"/>
+        <TextView
+            android:id="@+id/bngkl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PESAN"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/panah2"
+            android:fontFamily="@font/tmnew"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tlbar3">
+
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_akun2"
+            android:layout_margin="5mm"
+            android:id="@+id/gmbr1"/>
+
+        <TextView
+            android:id="@+id/pelanggan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gmbr1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="-88dp"
+            android:fontFamily="@font/arial"
+            android:text="Pelanggan1"
+            android:textColor="#CFCFE1"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pelanggan1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/arial"
+            android:text="Hallo, Pak saya ingin memesan..."
+            android:textColor="#CFCFE1"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/pelanggan2"/>
+
+        <TableRow
+            android:id="@+id/pembatas"
+            android:layout_width="50mm"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pelanggan2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/garis"
+            android:backgroundTint="#E5D5D5"
+            android:orientation="vertical"
+            android:paddingTop="3dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

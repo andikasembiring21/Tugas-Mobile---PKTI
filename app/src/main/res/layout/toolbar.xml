@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="69dp"
+    android:background="@color/kuning"
+    android:elevation="4dp"
+    android:id="@+id/toolbar">
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="249dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="13dp"
+        android:foregroundGravity="left"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/search"
+        android:gravity="center"
+        android:hint="cari bengkel bahan atau produk" />
+
+    <TextView
+        android:id="@+id/notif"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableRight="@drawable/notif" />
+
+</androidx.appcompat.widget.Toolbar>

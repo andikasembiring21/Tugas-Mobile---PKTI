@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailpesanan"
+    android:background="#000000">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Detail_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/hijau"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifikasi Pesanan"
+            android:fontFamily="@font/arial"
+            android:textSize="19dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Detail_Toolbar"
+        android:textSize="34dp"
+        android:text="Pesanan"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/archivonarrowregular"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tlbar3"
+        android:layout_marginTop="120dp"
+        android:id="@+id/kolom">
+
+        <TextView
+            android:id="@+id/btnLgn"
+            android:layout_width="408dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/bg_gradasi9"
+            android:shadowColor="#988A8A"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+        <TextView
+            android:id="@+id/gmbr1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3mm"
+            android:layout_marginTop="2mm"
+            android:drawableBottom="@drawable/lokasi"
+            android:text="Pagar Besi"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/pelanggan1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gmbr1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="198dp"
+            android:layout_marginTop="-70dp"
+            android:fontFamily="@font/tahoma"
+            android:gravity="right"
+            android:text="Rp.2.800.000,00-"
+            android:textColor="#CFCFE1"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pelanggan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pelanggan1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/arial"
+            android:text="Jl.Maju Terus No.31"
+            android:textColor="#CFCFE1"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/Detail"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gmbr1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="198dp"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/tahoma"
+            android:gravity="right"
+            android:text="Detail"
+            android:textColor="#CFCFE1"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/kolom"
+        android:layout_marginTop="-3dp">
+
+        <TextView
+            android:id="@+id/isidlm"
+            android:layout_width="408dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/bg_gradasi9"
+            android:shadowColor="#988A8A"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kolom"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/bg_gradasi10"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="30dp"
+            android:drawableRight="@drawable/close"
+            android:onClick="onClose"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detail Pesanan"
+            android:fontFamily="@font/tmnew"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:id="@+id/dtailpesanan" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Nmapsn"
+            android:layout_below="@+id/dtailpesanan"
+            android:text="Nama Pemesan                 :"
+            android:fontFamily="@font/tmnew"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/datadiri"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dtailpesanan"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/Nmapsn"
+            android:inputType="text"
+            android:hint="Nama Pemesan"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Nmapsn2"
+            android:layout_below="@+id/datadiri"
+            android:text="Alamat Pemesan               :"
+            android:fontFamily="@font/tmnew"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/datadiri2"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Nmapsn"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/Nmapsn"
+            android:inputType="text"
+            android:hint="Alamat Pemesan"
+            android:textSize="14dp"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Nmapsn3"
+            android:layout_below="@+id/datadiri2"
+            android:text="Pesanan                             :"
+            android:fontFamily="@font/tmnew"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/datadiri3"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Nmapsn"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/Nmapsn3"
+            android:inputType="text"
+            android:hint="Pesanan"
+            android:textSize="14dp"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Nmapsn4"
+            android:layout_below="@+id/datadiri3"
+            android:text="Metode Pembayaran         :"
+            android:fontFamily="@font/tmnew"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/datadiri4"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Nmapsn"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/Nmapsn4"
+            android:inputType="text"
+            android:hint="Metode Pembayaran"
+            android:textSize="14dp"
+            android:layout_marginTop="105dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Nmapsn5"
+            android:layout_below="@+id/datadiri4"
+            android:text="Total Pembayaran             :"
+            android:fontFamily="@font/tmnew"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/datadiri5"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Nmapsn"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/Nmapsn5"
+            android:inputType="text"
+            android:hint="Total Pembayaran"
+            android:textSize="14dp"
+            android:layout_marginTop="150dp"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datadiri5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/bg_gradasi4"
+            android:backgroundTint="#01FF23"
+            android:text="Terima Pesanan"
+            android:id="@+id/buttonPesan"
+            android:textSize="18dp"
+            android:onClick="onTrimaPesan"/>
+
+        <Button
+            android:id="@+id/buttonTolak"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/buttonPesan"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_gradasi5"
+            android:backgroundTint="#000000"
+            android:text="Tolak Pesanan"
+            android:textSize="15dp"
+            android:onClick="onTolakPesanan"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

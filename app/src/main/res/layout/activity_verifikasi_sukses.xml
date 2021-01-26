@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".verifikasi_sukses"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:text="Akun anda telah di verifikasi oleh J3LI-O"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Silahkan Masuk dan Dapatkan Jasa p3nempahan oLahan besI Online yang Cepat dan Terpercaya"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_masuk"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_gradasi13"
+        android:gravity="center"
+        android:text="Masuk"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="onVerifikasiUser"/>
+
+</LinearLayout>

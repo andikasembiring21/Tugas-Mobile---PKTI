@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bengkel_material">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#2DDB0C"
+        android:id="@+id/tlbar2"
+        android:duplicateParentState="true">
+        <TextView
+            android:id="@+id/bngkl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BENGKEL KAMU"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/tmnew"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/ntf2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notif"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="6dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tlbar2"
+        android:id="@+id/jnsbgkl2">
+
+        <ImageView
+            android:id="@+id/bgklJaya2"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="214dp"
+            android:outlineSpotShadowColor="#FA7D7750"
+            android:scaleType="fitXY"
+            android:src="@drawable/toko_jaya" />
+
+        <TextView
+            android:id="@+id/jymndi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bgklJaya2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-160dp"
+            android:layout_marginEnd="52dp"
+            android:fontFamily="@font/stencil_regular"
+            android:text="JAYA MANDIRI"
+            android:textColor="@color/merah"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jymndi3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bgklJaya2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-140dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/stencil_regular"
+            android:gravity="center"
+            android:text="[BENGKEL LAS / KONSTRUKSI]"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jlan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jymndi3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="83dp"
+            android:drawableLeft="@drawable/location"
+            android:fontFamily="@font/tahoma"
+            android:gravity="fill"
+            android:text="Jln.Mahkamah No.68 Medan"
+            android:textColor="@color/black"
+            android:textSize="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jlan2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="77dp"
+            android:drawableLeft="@drawable/email"
+            android:fontFamily="@font/tahoma"
+            android:gravity="fill"
+            android:text="irwanjayamandiri@yahoo.com"
+            android:textColor="@color/black"
+            android:textSize="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nomndiri2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="116dp"
+            android:drawableLeft="@drawable/phone"
+            android:fontFamily="@font/tahoma"
+            android:gravity="fill"
+            android:text="+62821 6463 5334"
+            android:textColor="@color/black"
+            android:textSize="8dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/nomndiri2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/star"
+                android:shadowColor="#000000" />
+
+            <TextView
+                android:id="@+id/star3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/star"
+                android:shadowColor="#000000" />
+
+            <TextView
+                android:id="@+id/star4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/star"
+                android:shadowColor="#000000" />
+
+            <TextView
+                android:id="@+id/star5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/star"
+                android:shadowColor="#000000" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bgklJaya2"
+            android:id="@+id/kerja2"
+            android:text="@string/kerja"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ravie"
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:layout_marginTop="2mm"/>
+        <Button
+            android:layout_width="22mm"
+            android:layout_height="7mm"
+            android:layout_below="@+id/kerja2"
+            android:background="@drawable/bg_gradasi4"
+            app:backgroundTint="#ffffff"
+            android:text="JASA"
+            android:fontFamily="@font/arial"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="8mm"
+            android:layout_marginTop="5mm"
+            android:id="@+id/jsa2"
+            app:backgroundTintMode="multiply"/>
+
+        <Button
+            android:id="@+id/material2"
+            android:layout_width="22mm"
+            android:layout_height="7mm"
+            android:layout_below="@+id/kerja2"
+            android:layout_marginLeft="38mm"
+            android:layout_marginTop="5mm"
+            android:layout_toEndOf="@+id/jsa"
+            android:background="@drawable/bg_gradasi4"
+            android:fontFamily="@font/arial"
+            android:text="Material"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:backgroundTint="#01FF23"
+            app:backgroundTintMode="multiply" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/material2"
+            android:text="Menerima Jasa Pembuatan : "
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/mnrimajsa2"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mnrimajsa2">
+            <RelativeLayout
+                android:id="@+id/wdahjaya1"
+                android:layout_width="match_parent"
+                android:layout_height="81mm"
+                android:layout_below="@+id/mnrimajsa"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="53dp"
+                android:layout_marginTop="9dp">
+
+                <RelativeLayout
+                    android:id="@+id/wdahjaya2"
+                    android:layout_width="match_parent"
+                    android:layout_height="25mm">
+
+                    <TextView
+                        android:id="@+id/wdahjdl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28mm"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="174dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/bg_gradasi5"
+                        android:fontFamily="@font/tahoma"
+                        android:shadowColor="#988A8A"
+                        android:text="Pipa Besi"
+                        android:textColor="#000000"
+                        android:textSize="19dp"
+                        app:backgroundTint="#FFFFFF"
+                        app:backgroundTintMode="multiply"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/info_material1"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wdahjdl2"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="184dp"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/arial"
+                        android:text="@string/info_besi"
+                        android:textColor="@color/black"
+                        android:textSize="11dp" />
+
+
+                    <TextView
+                        android:layout_width="192dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/info_material1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="-16dp"
+                        android:layout_marginEnd="11dp"
+                        android:fontFamily="@font/arial"
+                        android:text="Selengkapnya"
+                        android:textColor="#4E79DE"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:layout_width="168dp"
+                        android:layout_height="28mm"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pipa_besi" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/wdahjaya3"
+                    android:layout_width="match_parent"
+                    android:layout_height="25mm"
+                    android:layout_below="@id/wdahjaya2">
+
+                    <TextView
+                        android:id="@+id/wdahjdl3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32mm"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="174dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/bg_gradasi5"
+                        android:fontFamily="@font/tahoma"
+                        android:shadowColor="#988A8A"
+                        android:text="Besi Plat"
+                        android:textColor="#000000"
+                        android:textSize="19dp"
+                        app:backgroundTint="#FFFFFF"
+                        app:backgroundTintMode="multiply"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/info_material2"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wdahjdl3"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="184dp"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/arial"
+                        android:text="@string/besi_plat"
+                        android:textColor="@color/black"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:layout_width="192dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/info_material2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="35dp"
+                        android:fontFamily="@font/arial"
+                        android:text="Selengkapnya"
+                        android:textColor="#4E79DE"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:layout_width="163dp"
+                        android:layout_height="185dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/besi_plat" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/wdahjaya4"
+                    android:layout_width="match_parent"
+                    android:layout_height="28mm"
+                    android:layout_below="@id/wdahjaya3">
+
+                    <TextView
+                        android:id="@+id/wdahjdl4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28mm"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="174dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/bg_gradasi5"
+                        android:fontFamily="@font/tahoma"
+                        android:shadowColor="#988A8A"
+                        android:text="Besi Hollow"
+                        android:textColor="#000000"
+                        android:textSize="19dp"
+                        app:backgroundTint="#FFFFFF"
+                        app:backgroundTintMode="multiply"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/info_material3"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wdahjdl4"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="184dp"
+                        android:layout_marginTop="45dp"
+                        android:fontFamily="@font/arial"
+                        android:text="@string/besi_hollow"
+                        android:textColor="@color/black"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:layout_width="192dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/info_material3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="35dp"
+                        android:fontFamily="@font/arial"
+                        android:text="Selengkapnya"
+                        android:textColor="#4E79DE"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:layout_width="168dp"
+                        android:layout_height="28mm"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pagarjaya3" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

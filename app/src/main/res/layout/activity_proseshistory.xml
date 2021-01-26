@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2222"
+    tools:context=".proseshistory">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2C2222"
+        tools:context=".pesanan">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Proses_Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2DDB0C"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:elevation="4dp"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Histori Pesanan"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8mm"
+            android:background="#2C2222"
+            android:id="@+id/tmpt">
+
+            <Button
+                android:id="@+id/selesai"
+                android:layout_width="22mm"
+                android:layout_height="7mm"
+                android:layout_below="@+id/kerja2"
+                android:layout_marginLeft="8mm"
+                android:layout_marginTop="5mm"
+                android:background="@drawable/bg_gradasi4"
+                android:fontFamily="@font/arial"
+                android:text="SELESAI"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:backgroundTint="#06CCFF"
+                app:backgroundTintMode="multiply"
+                android:onClick="onSelesai2"/>
+
+            <Button
+                android:id="@+id/proses"
+                android:layout_width="22mm"
+                android:layout_height="7mm"
+                android:layout_below="@+id/kerja2"
+                android:layout_marginLeft="38mm"
+                android:layout_marginTop="5mm"
+                android:layout_toEndOf="@+id/jsa"
+                android:background="@drawable/bg_gradasi4"
+                android:fontFamily="@font/arial"
+                android:text="PROSES"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:backgroundTint="#EFD210"
+                app:backgroundTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/psnanpagar"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:layout_below="@+id/selesai"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/bg_gradasi7"
+                android:fontFamily="@font/arial"
+                android:text="Pagar rumah"
+                android:textColor="#F2F5FE"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:backgroundTint="#2C2222"
+                app:backgroundTintMode="multiply" />
+
+            <TextView
+                android:id="@+id/toko"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psnanpagar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="124dp"
+                android:fontFamily="@font/arial"
+                android:text="BENGKEL LAS HARAPAN JAYA"
+                android:textColor="#E3E5EB"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toko"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:fontFamily="@font/tahoma"
+                android:inputType="date"
+                android:text="24/12/2020"
+                android:textColor="#EFEFEF"
+                android:textSize="9dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/jam"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tanggal"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="82dp"
+                android:layout_marginTop="150dp"
+                android:ems="10"
+                android:inputType="time"
+                android:text="13:30"
+                android:textColor="#EFEFEF"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/editTextNumberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="Rp.5.000.000"
+                android:textColor="#CDD6EF"
+                android:textSize="17dp"
+                android:gravity="right"
+                android:fontFamily="@font/tahoma"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="720dp"
+        android:background="@color/purple_200">
+
+        <TextView
+            android:id="@+id/txthome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5mm"
+            android:drawableTop="@drawable/home2"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="2dp"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:onClick="onHomes2"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:id="@+id/txtbengkel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9mm"
+            android:drawableTop="@drawable/chat2"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="2dp"
+            android:onClick="onPesanbengkel"
+            android:text="Pesan"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/txtProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9mm"
+            android:drawableTop="@drawable/akun2"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="2dp"
+            android:text="Profil"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txthistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9mm"
+            android:drawableTop="@drawable/history"
+            android:fontFamily="@font/arial"
+            android:text="History"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+</RelativeLayout>

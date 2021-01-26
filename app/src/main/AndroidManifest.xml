@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jonatal.testing.pkti">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".terdekatbengkel"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""></activity>
+        <activity
+            android:name=".proses_user"
+            android:label=""
+            android:parentActivityName=".home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".riwayatpemesanan"
+            android:label=""
+            android:parentActivityName=".home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".detailpesanan_user"
+            android:label=""
+            android:parentActivityName=".konfirmasi_pemesanan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".konfirmasi_pemesanan"
+            android:label=""
+            android:parentActivityName=".usertoko"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".verifikasi_suksesbengkel" />
+        <activity android:name=".verifikasi_sukses" />
+        <activity
+            android:name=".verifikasi_user"
+            android:label=""
+            android:parentActivityName=".daftaruser"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".daftaruser"
+            android:label=""
+            android:parentActivityName=".daftar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".material"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".proseshistory"
+            android:label=""
+            android:parentActivityName=".bengkel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verifikasibengkel"
+            android:label=""
+            android:parentActivityName=".daftarbengkel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".daftarbengkel"
+            android:label=""
+            android:parentActivityName=".daftar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".detailpesanan"
+            android:label=""
+            android:parentActivityName=".notifikasi" />
+        <activity
+            android:name=".usermaterial"
+            android:label=""
+            android:parentActivityName=".home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".usertoko"
+            android:label=""
+            android:parentActivityName=".home" />
+        <activity
+            android:name=".home2"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".notifikasi"
+            android:label=""
+            android:parentActivityName=".bengkel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".history"
+            android:label=""
+            android:parentActivityName=".bengkel" />
+        <activity android:name=".bengkel" />
+        <activity
+            android:name=".pesanan"
+            android:label=""
+            android:parentActivityName=".bengkel" />
+        <activity android:name=".bengkel_material" />
+        <activity android:name=".contentmain" />
+        <activity
+            android:name=".home"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".daftar" />
+        <activity
+            android:name=".log_in"
+            android:parentActivityName=".welcome" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".welcome" />
+    </application>
+
+</manifest>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".konfirmasi_pemesanan"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Konfirmasipemesanan_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kuning"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Konfirmasi Pemesanan"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arial"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/garis"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginLeft="75dp"
+        android:text="Alamat Pemesanan"
+        android:textSize="20dp"
+        android:elevation="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JL.Maju Terus no.31"
+        android:textSize="30dp"
+        style="@style/CardView.Dark"
+        android:textStyle="bold"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="-10dp"/>
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:background="@drawable/location"
+        android:layout_marginTop="-60dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/garis"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/garis"
+        android:layout_marginTop="-5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Pesanan"
+        style="@style/CardView.Dark"
+        android:textStyle="bold"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="-15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pagar besi hollow"
+        android:textSize="15dp"
+        style="@style/CardView.Dark"
+        android:textStyle="bold"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="40x40.40x60, dan 40 x 20"
+        android:textSize="15dp"
+        style="@style/CardView.Dark"
+        android:textStyle="bold"
+        android:layout_marginLeft="200dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ada besi hitam ada"
+        android:textSize="15dp"
+        style="@style/CardView.Dark"
+        android:textStyle="bold"
+        android:layout_marginLeft="200dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="besi galfanized"
+        android:textSize="15dp"
+        style="@style/CardView.Dark"
+        android:textStyle="bold"
+        android:layout_marginLeft="200dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pagar Besi"
+        android:textStyle="bold"
+        style="@style/CardView.Dark"
+        android:textSize="29dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="-137dp"/>
+
+    <ImageView
+        android:layout_width="163dp"
+        android:layout_height="89dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pagarjaya" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/garis"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/garis"
+        android:layout_marginTop="-5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Pembayaran sesuai kesepakatan dengan"
+        style="@style/CardView.Dark"
+        android:textSize="18dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="-14dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bengkel Las"
+        style="@style/CardView.Dark"
+        android:textSize="19dp"
+        android:layout_marginLeft="7dp"/>
+    <TextView
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:text="Rp"
+        style="@style/CardView.Dark"
+        android:textSize="20dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="-38dp"
+        android:background="@drawable/box"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/garis"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/garis"
+        android:layout_marginTop="-5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Metode Pembayaran sesuai Kesepakatan dengan"
+        style="@style/CardView.Dark"
+        android:textSize="18dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="-14dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pemilik Bengkel"
+        style="@style/CardView.Dark"
+        android:textSize="18dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="-8dp"/>
+    <RadioButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfer Antar Bank"
+        android:layout_marginLeft="175dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        style="@style/CardView.Dark"
+        android:layout_marginTop="-29dp"
+        />
+    <RadioButton
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Bayar Tunai"
+        android:layout_marginLeft="177dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        style="@style/CardView.Dark"
+        android:layout_marginTop="-35dp"
+        />
+    <Button
+        android:layout_width="353dp"
+        android:layout_height="55dp"
+        android:text="Konfirmasi Pemesanan"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="23dp"
+        android:background="@drawable/bg_gradasi13"
+        android:onClick="onKonfirmasiPesanan"/>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

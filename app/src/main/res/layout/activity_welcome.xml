@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcome">
+    <LinearLayout
+        android:id="@+id/susunan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_700"
+        android:paddingTop="100dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/jdl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang
+            Di J3LI-0"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:fontFamily="@font/tahoma"
+            android:textStyle="bold"
+            android:layout_marginTop="15mm"/>
+
+        <RelativeLayout
+            android:id="@+id/pemisah1"
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/sbjdl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dapatkan Jasa P3nempahan oLahan besI Online yang Cepat dan Terpercaya"
+            android:textAlignment="center"
+            android:textColor="@color/greenlight"
+            android:textSize="15dp"/>
+
+        <RelativeLayout
+            android:id="@+id/pemisah2"
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@id/pemisah2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/masuk"
+                android:layout_width="1dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradasi2"
+                android:gravity="center"
+                android:text="Masuk"
+                android:textSize="20dp"
+                app:backgroundTint="#097116"
+                android:onClick="onMasuk"/>
+
+            <Button
+                android:id="@+id/daftar"
+                android:layout_width="0dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/form"
+                android:gravity="center"
+                android:text="Daftar"
+                android:textSize="20dp"
+                app:backgroundTint="#268FA5"
+                android:onClick="onDftr"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">pkti</string>
+    <string name="bengkel1"><b><u>LAS HARAPAN JAYA</u></b></string>
+    <string name="toolbar">toolbar</string>
+    <string name="jalan">Jln.Graha Tanjung Anom/HM Puna Sembiring, Simpang Griya Permata IV, Medan. Indonesia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mandiri"><b>JAYA MANDIRI [BENGKEL LAS / KONSTRUKSI]</b></string>
+    <string name="bottom_navigations">bottom_navigations</string>
+    <string name="kerja">"Kerja Kerja Kerja"</string>
+    <string name="atap"> atap polycarbonate ada beberapa
+ merk yang bergaransi kw1 kw2, begitu juga untuk
+atap kain, atap spandek, atap kaca, genteng metal
+masing masing harganya berbeda</string>
+    <string name="info_besi">Besi ini terbuat dari baja dan sering kita jumpai di toko bangunan. Pipa besi
+        memiliki bentuk bulat memanjang dan warna yang khas hitam. Manfaat dari besi ini...</string>
+    <string name="besi_plat">Bentuk besi ini berupa plat atau lempengan
+    yang memanjang sehingga mudah dibentuk
+    dan difungsikan. Besi plat adalah besi baja
+    yang biasanya  .... </string>
+    <string name="besi_hollow">Besi hollow berbentuk pipa kotak. Besi hollow
+    bermanfaat untuk pembangunan plafon dan
+    juga untuk rangka dinding partisi yang anti
+    rayap, tahan api,.... </string>
+    <string name="Besi_Beton">Besi beton ini cukup kokoh untuk menopang
+pondasi bangunan berskala kecil seperti
+hunian keluarga. Besi beton disebut juga
+besi penulangan karena selalu
+digunakan ...</string>
+    <string name="info_bengkelterdekat">Harga teralis jendela minimalis Rp.300.000 /
+m2 sampai dengan Rp. 425.000 / m2 . Harga
+teralis jendela klasik/ besi tempa Rp. 450.000...</string>
+    <string name="info_jayaMandiri">Mengerjakan : Pagar ,Canopy,Pintu,Pagar,
+Jerjak,Pagar Minimalis,Tenda Café,
+Tenda Teratak,Ayunan,Mainan TK,Prosotan
+Waterboom...</string>
+    <string name="info_permataabdai">BENGKEL LAS PERMATA ABADI MEDAN:
+menyediakan Jasa pembuatan pagar besi.
+pintu sorong.teralis besi,pintu ruko,pintu
+press,folding</string>
+    <string name="jln_permata">Jln.Graha Tanjung Anom/ HM Puna Sembiring,
+Simpang Griya Permata IV Medan Indonesia</string>
+    <string name="info_mekar">Melayani Pembuatan :Pagar,Tenda Teratak,
+Jerjak ,Kanopi,permainan TK,Bola Dunia
+Ayunan,Tenda Café,Plafon Pesta,
+Plafon Tenda</string>
+    
+    
+</resources>

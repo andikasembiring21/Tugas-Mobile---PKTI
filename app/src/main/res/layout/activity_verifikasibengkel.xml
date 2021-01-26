@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="657dp"
+    tools:context=".verifikasibengkel"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/VerifikasiBengkel_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kuning"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verifikasi Email/Nomor Hp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arial"
+            android:textSize="18dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="J3LI-O"
+        android:textColor="@android:color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teks_verifikasi"
+        android:text="Masukan 4 digit Angka yang telah dikirim ke email/nomor hp anda"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:fontFamily="@font/arial"/>
+
+    <EditText
+        android:id="@+id/kotak1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-60dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/kotak2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="-35dp"
+        android:background="@drawable/box"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="-60dp"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/kotak3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="-35dp"
+        android:background="@drawable/box"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="-60dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/kotak4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="-35dp"
+        android:background="@drawable/box"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btn_masuk"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bg_gradasi12"
+        android:gravity="center"
+        android:text="Verifikasi"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="onLanjutVerif2"/>
+</LinearLayout>

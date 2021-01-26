@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".log_in">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="72dp"-->
+<!--        android:background="@color/kuning"-->
+<!--        android:id="@+id/men">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/Back"-->
+<!--            android:layout_width="153dp"-->
+<!--            android:layout_height="43dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="22dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="252dp"-->
+<!--            android:layout_marginBottom="24dp"-->
+<!--            android:drawableLeft="@drawable/panah"-->
+<!--            android:paddingTop="8dp"-->
+<!--            android:text="Masuk"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Log_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kuning"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/men"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/jdlgmbr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:drawableBottom="@drawable/user2"
+            android:fontFamily="@font/arial"
+            android:text="J3LI-O"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/emailNmr"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jdlgmbr"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Email/Nomor HP"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:background="@drawable/bg_gradasi5"
+            />
+
+        <EditText
+            android:id="@+id/Pssw"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailNmr"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:background="@drawable/bg_gradasi5"/>
+
+        <Button
+            android:id="@+id/btnLgn2"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Pssw"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="242dp"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/form2"
+            android:onClick="onLogin"
+            android:shadowColor="#000000"
+            android:text="Login User"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:backgroundTint="#EFD210" />
+
+        <Button
+            android:id="@+id/btnLgn3"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Pssw"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/form2"
+            android:onClick="onLoginBengkel"
+            android:shadowColor="#000000"
+            android:text="Login Bengkel"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:backgroundTint="#EFD210" />
+    </RelativeLayout>
+</RelativeLayout>
